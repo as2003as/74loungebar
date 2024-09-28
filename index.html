@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>74 Menu</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #f8f8f8;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .content {
+      flex: 1 1 300px;
+      padding: 20px;
+      margin: 10px;
+      background-color: #fbfbec;
+      border-radius: 10px;
+      border: 2px solid #000000;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      border: 3px solid #000000;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+    h3{
+        text-align: center;
+    }
+    .logo{
+        width: 150px;
+        height: 150px;
+    }
+    .try{
+      width: 100%;
+      height: auto;
+    }
+    #back-to-top-btn{
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        font-size: 26px;
+        width: 40px;
+        height: 40px;
+        background-color: #ffffff;
+        color: #333;
+        cursor: pointer;
+        outline: none;
+        border: 3px solid #333;
+        border-radius: 50%;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+        transition-property: background-color, color;
+    }
+    #back-to-top-btn:hover , #back-to-top-btn:focus{
+        background-color: #333;
+        color: #ffffff
+    }
+
+    /* Media Queries for responsiveness */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .logo{
+        width: 150px;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="logo.png">
+    <h4>Free Delivery | Number: 048-74-74-74</h4> <br>
+    <h1>𝒮𝒽𝒾𝒿𝑜𝓃𝒾 𝓂𝒾𝓇𝑒𝓅𝓇𝒾𝓉𝒿𝑒𝓃 𝒹𝒽𝑒 𝓅𝑒𝓇𝑔𝒶𝒹𝒾𝓉𝒿𝑒𝓉 𝓉𝑜𝓃𝒶 𝓉𝓇𝒶𝒹𝒾𝒸𝒾𝑜𝓃𝒶𝓁𝑒!</h1>
+  </header>
+<br> <br>
+<button id="back-to-top-btn"><i class="fa-solid fa-angles-up"></i></button>
+  <section class="container">
+    <div class="content">
+      <!-- <h2>Ju mirëpresim!</h2> -->
+      <h3>File viçi i përgaditur në atë formë që t'i ruajë të gjitha vlerat ushqyese, teksa perimet dhe orizi veçse ia shtojnë edhe me shumë shijen!</h3>
+      <img src="one.png" alt="Sample Image">
+    </div>
+
+    <div class="content">
+      <h3>Medalion i përgaditur me delikatesë dhe përkushtim në çdo detaj!</h3>
+      <img src="two.png" alt="Sample Image">
+    </div>
+
+    
+    <div class="content">
+        <h3>Ramstek i përgaditur në atë formë që t'i ruajë të gjitha vlerat ushqyese, teksa perimet dhe orizi veçse ia shtojnë edhe me shumë shijen!</h3>
+        <img src="three.png" alt="Sample Image">
+      </div>
+
+      <div class="content">
+        <h3>Biftek 74 i freskët dhe i shoqëruar me perime! I marinuar me melmesa të ndryshme që shija e tij të jetë e pa harruar! </h3>
+        <img src="four.png" alt="Sample Image">
+      </div>
+
+      <div class="content">
+        <h3>Ejani dhe përjetoni shijën e mishit të Kombinuar të përgaditur me shumë shije dhe kujdes!</h3>
+        <img src="five.png" alt="Sample Image">
+      </div>
+
+      <div class="content">
+        <h3>File Pule e përgaditur me delikatesë dhe me shije të veçantë!</h3>
+        <img src="six.png" alt="Sample Image">
+      </div>
+
+      
+      <div class="content">
+        <h3>Për ata që janë të pasionuar në Sallatë Fshati! </h3>
+        <img src="s1.png" alt="Sample Image">
+      </div>
+
+
+      
+      <div class="content">
+        <h3>Sallatë Rukola , e shijshme dhe gjithmonë e freskët!</h3>
+        <img src="s2.png" alt="Sample Image">
+      </div>
+
+
+      
+      <div class="content">
+        <h3>Për ata që janë të pasinouar në Sallatë Mix! </h3>
+        <img src="s3.png" alt="Sample Image">
+      </div>
+
+
+
+
+
+
+  </section>
+
+
+<img class="try" src="try.png">
+
+  <script>
+    const backToTopButton = document.querySelector("#back-to-top-btn");
+
+    window.addEventListener("scroll" , scrollFunction);
+
+    function scrollFunction() {
+        if(window.pageYOffset > 300) {
+            backToTopButton.style.display = "block";
+
+        }
+        else{
+            backToTopButton.style.display = "none";
+        }
+    }
+
+
+    backToTopButton.addEventListener("click" , backToTop);
+
+    function backToTop(){
+        window.scrollTo(0 , 0);
+    }
+  </script>
+
+
+</body>
+</html>
